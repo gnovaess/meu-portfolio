@@ -1,0 +1,696 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;        /* cor do site */
+    height: 100vh;                      /* altura padrão */
+}
+
+.interface{
+    max-width: 1400px;                  /* largura máx */
+    margin: 0 auto;                     /* afastamento da lateral vertical */
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* ---ESTILO DO CABEÇALHO--- */
+
+
+header{
+    padding: 20px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #000000;                   /* afastamento dos itens do cabeçalho */
+}
+
+header > .interface{                    /*chamo a classe interface que está dentro do header com o sinal de maior > */
+    display: flex;
+    align-items: center;                /* alinhamento dos itens no centro da page */
+    justify-content: space-between;     /* espaço entre os elementos */   
+}
+
+header a{                               /*a = chama todos os links dentro do cabeçalho */
+    color: #ffffff;                   /* cor do texto dos links */ 
+    text-decoration: none;             /* remove o sublinhamento dos links */                 
+    font-family: 'Saira', sans-serif;
+    font-size: 20px;                     /* tamanho da fonte */ 
+}
+
+header a:hover, header a.ativo{         /* deixa o efeito hover na cor azul ativada no link HOME*/ 
+    color: #007bff;                   
+}
+
+header nav ul{
+    list-style-type: none;              /* remove as bolinhas da ul */
+}   
+
+header nav ul li{
+    display: inline-block;              /* deixar um link do lado do outro */
+    padding: 0 40px;                    /* espaçamento entre os links */
+}
+
+header .btn-contato button{
+    padding: 10px 20px;                  /* espaçamentos */ 
+    font-size: 18px;                     /* tamanho da fonte */ 
+    font-weight: 500;                    /* aumenta o peso da fonte */ 
+    cursor: pointer;                     /* deixa o cursor estilo mão */ 
+    width: 8rem;                         /* comprimento do button */ 
+    height: 3rem;                        /* largura do button */ 
+    border-radius: .5rem;                /* raio da borda */ 
+    background-color: transparent;       /* cor transparente no button */ 
+    transition: 0.4s;                    /* efeito */ 
+    border: .2rem solid #61adff;       /* cor da borda do button */ 
+    color: #fff;                    /* cor do texto */   
+}
+
+header .btn-contato button:hover{
+    background-color: #61adff;         /* efeito hover do button contato */
+    transition: 0.5s ease;               /* efeito */
+}
+
+
+/* ---ESTILO DO HEADER--- */
+
+
+section.head-do-site{
+    font-family: 'Saira', sans-serif;  /* configuração de padding e cor de fundo da section  */
+    padding: 100px 4%;     
+}
+
+section.head-do-site .flex{
+    align-items: center;
+    justify-content: space-between;      /* espaçamento entre os itens */               
+}
+
+section.head-do-site .txt-head-site h4{        /* cor, altura, peso da fonte e espaçamento da linha h4 */
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    color: #dbdbdbd7;                
+    line-height: 50px;
+    padding: 10px 1%;
+}
+
+section.head-do-site .txt-head-site h1{        /* cor, altura e peso da fonte da linha h1 */
+    color: #fff;
+    font-size: 90px;                    
+    line-height: 80px;                  
+}
+
+section.head-do-site .txt-head-site h1 span{   /* cor e espaçamento do span do h1 */
+    color:#007bff;     
+    padding: 10px 8%;                  
+}
+
+section.head-do-site .txt-head-site p{          /* cor e margem do paragrafo */
+    color: #ececec;                  
+    margin: 30px 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+section.head-do-site .img-head-site img{        /* tamanho da imagem 1 */
+    width: 25vw;
+    padding: 150px 8%;                    
+}
+
+
+/* ---ESTILIZAÇÃO BOTÃO MÍDIAS--- */
+
+
+section.head-do-site .btn-midias{
+    padding: 1px 0%;
+    text-align: left;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+section.head-do-site .display-flex{
+    display: flex;
+}
+
+section.head-do-site .link-contato{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.4s;
+    font-size: 1.9em;
+}
+
+section.head-do-site .link-contato:hover{
+    transform: scale(1.15);
+    color: #007bff;
+}
+ 
+/* ---ESTILO DO SOBRE MIM--- */
+
+
+section.section_sobre{
+    font-family: 'Saira', sans-serif;           /* configuração de padding e cor de fundo da section  */
+    padding: 150px 4%;
+}
+ 
+section.section_sobre .flex{                             /* configuração de posicionamento dos itens img e p  */
+    align-items: left; 
+    gap: 90px;
+    text-align:left;
+}
+
+section.section_sobre .txt_section_sobre h1{             /* cor, tamanho da fonte, peso da fonte e largura do h1  */
+    color: #ffffff;
+    font-size: 70px;
+    line-height: 90px;
+}
+
+section.section_sobre .txt_section_sobre h1 span{        /* cor, display block para quebrar uma linha abaixo, e tamanho do h1  */
+    color: #007bff;
+}
+
+section.section_sobre .txt_section_sobre p{ 
+    font-family: 'Fira Sans', sans-serif;             /* cor do paragrafo  */
+    color:#ececec    
+}
+
+
+/*---ESTILO DO PORTFÓLIO---*/
+
+
+section.section_projetos{
+    font-family: 'Saira', sans-serif;           /* configuração de padding, cor de fundo da section e efeito de luz da section */
+    padding: 90px 4%;
+}
+
+section.section_projetos .titulo_projeto{               /* configuração do texto MEUS PROJETOS  */
+    padding: 40px 2%;
+    text-align: center;
+    font-size: 4rem;
+    color: #007bff;
+    margin-bottom: 2rem;                                 /* distância da margem inferior do elemento texto MEUS PROJETOS */
+}
+
+section.section_projetos .titulo_projeto span{               /* configuração do texto MEUS PROJETOS  */
+    color: #ffffff;
+    display: inline;                              /* distância da margem inferior do elemento texto MEUS PROJETOS */
+}
+
+section.section_projetos .container_projetos{           /* configuração do rascunho do container que comporta os projetos  */
+    padding: 10px 2%;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+section.section_projetos .container_projetos .card_projeto{   /* configuração dos card's que comporta os projetos  */
+    width: 45rem;
+    min-width: 15rem;
+    height: 20rem;
+    background-color: #000000;
+    position: relative;
+    border: .1rem solid #575757a4;
+    border-radius: .3rem;  
+    position: relative;
+}
+
+section.section_projetos .container_projetos .card_projeto .imagem_fundo{   /* configuração das imagens dos projetos que vão dentro do card's  */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+section.section_projetos .container_projetos .card_projeto:hover .imagem_fundo{  /* configuração do hover quando passa o mouse por cima do card do projeto  */
+    opacity: .1;  
+    transition: 0.2s ease;   
+    cursor: pointer;
+    transform: scale(1.01); 
+}
+
+section.section_projetos .container_projetos .card_projeto .card_descricao{     
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    opacity: 0;   
+}
+
+section.section_projetos .container_projetos .card_projeto:hover .card_descricao{  /* aparecer o conteudo do card com efeito hover */
+    opacity: 1;
+    transition: 0.5s ease;   
+}
+
+section.section_projetos .container_projetos .card_projeto .card_descricao .titulo_card{  /* configuração do titulo do card */
+    color: #ffffff;
+    font-size: 2.3rem;
+}
+
+section.section_projetos .container_projetos .card_projeto .card_descricao .card_nav{   /* configuração do nav button dentro do card */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 2;
+}
+
+section.section_projetos .container_projetos .card_projeto .card_descricao .card_nav .button{   /* configuração dos buttons github e site do card */
+    width: 10rem;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #000000;
+    font-size: 1.3rem;
+}
+
+section.section_projetos .container_projetos .card_projeto .card_descricao .card_nav .github{   /* cor do botão github do projeto */
+    background-color: rgb(204, 0, 255);
+}
+
+section.section_projetos .container_projetos .card_projeto .card_descricao .card_nav .site{     /* cor do botão site do projeto */
+    background-color: #00ffee;
+}
+
+/*---ESTILO CONTATO---*/
+
+
+section.section_habilidades{ 
+    font-family: 'Saira', sans-serif;              /* configuração de padding e cor de fundo da section  */
+    padding: 100px 4%;
+    font-size: 2.3rem;
+    margin: 200px; 
+    display: flex;
+}
+
+section.section_habilidades h1{
+    color: #ffffff;
+}
+
+section.section_habilidades span{                        /* cor do span */
+    color: #007bff;
+}
+
+section.section_habilidades h1, span{           /* configuração do h2 e do span "." dentro da section  */
+    justify-content: center;
+    align-items: center;
+}
+
+section.section_habilidades ul{
+    width: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px 4%;
+
+}
+
+
+/*---ESTILO FOOTER---*/
+
+ 
+.footer{
+    font-family: "IBM Plex Mono", sans-serif, monospace; /* configuração do rodapé */     
+    background-color: #141414;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .titulo{                                   /* configuração do texto CopyRight */
+    font-size: 1.0rem;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+
+/*---ESTILO SCROLLBAR---*/  
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(255, 0, 0, 0);
+}
+::-webkit-scrollbar-track{
+    background-color: #272727;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #b6b6b6;
+}
+
+
+
+
+/*---RESPONSIVIDADE---*/
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    .menu-header {
+        display: none;
+    }
+
+    
+    /* CABEÇALHO */ 
+    
+    header .logo-header img{
+        width: 80%;
+    }
+    header .btn-contato button{
+        padding: 10px 3px;                  /* espaçamentos */ 
+        font-size: 13px;                     /* tamanho da fonte */ 
+        font-weight: 400;                    /* aumenta o peso da fonte */                 /* cor do texto */   
+    }
+
+    
+    /* TOPO DO SITE */
+        
+    section.head-do-site .flex{
+        align-items: center;
+        justify-content: space-between;            
+        gap: 10px;                                                 
+    }
+
+    section.head-do-site .img-head-site img{                            
+        width: 100%;
+        padding: 60px 4%;                    
+    }
+
+    section.head-do-site .txt-head-site h4{               
+        font-size: 13px;               
+        line-height: 30px;
+        padding: 60px 15%;
+        margin-top: -80px; 
+        text-align: center;
+    }
+    
+    section.head-do-site .txt-head-site h1{               
+        padding: 5px 3%;
+        font-size: 50px;                    
+        line-height: 70px;
+        margin-top: -70px; 
+        text-align: center;
+                         
+    }
+    
+    section.head-do-site .txt-head-site h1 span{        
+        font-size: 45px;     
+        padding: 10px 17%;
+        text-align: center;              
+    }
+    
+    section.head-do-site .txt-head-site p{  
+        font-size: 14px;                               
+        padding: 10px 5%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    /* BTN MÍDIAS */
+    
+    section.head-do-site .btn-midias{
+        padding: 1px 25%;
+        text-align: left;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    
+    section.head-do-site .display-flex{
+        display: flex;
+        
+    }
+    
+    section.head-do-site .link-contato{
+        text-decoration: none;
+        color: #ffffff;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(28, 28, 28);
+        border-radius: 15px;
+        position: relative;
+        transition: 0.4s;
+        font-size: 15px;
+    }
+    
+    section.head-do-site .link-contato:hover{
+        cursor: pointer;
+        transform: scale(1.15);
+        color: #00ffff;
+    }
+    
+    section.head-do-site .link-contato i{
+        font-size: 1.9em;
+        
+    }
+
+    
+    /* SESSÃO SOBRE */
+
+    section.section_sobre{                                   /* configuração de padding e cor de fundo da section  */
+        padding: 60px 4%;
+    }
+
+    section.section_sobre .img_section_sobre img{
+        width: 100%;
+        padding: 20px 5%;   
+    }
+
+    section.section_sobre .txt_section_sobre h1{  
+        font-size: 40px;                   
+        padding: 10px 10%; 
+        text-align: center;
+     }
+
+     section.section_sobre .txt_section_sobre h1 span{ 
+        display: inline;                     
+     }
+     section.section_sobre .txt_section_sobre p{  
+        padding: 0px 8%;                    
+        font-size: 15px; 
+        text-align: justify; 
+     }
+
+    
+     /* MEUS PROJETOS */
+  
+     section.section_projetos{                                /* configuração de padding, cor de fundo da section e efeito de luz da section */
+        padding: 50px 13%;
+        background-color: #0f0f0f;
+        box-shadow: 0 0 100px 20px #e0e0e06b;
+    }
+    
+    section.section_projetos .titulo_projeto{               /* configuração do texto MEUS PROJETOS  */
+        padding: 20px 15%;
+        text-align: center;
+        font-size: 35px;                              /* distância da margem inferior do elemento texto MEUS PROJETOS */
+    }
+    
+    section.section_projetos .container_projetos{           /* configuração do rascunho do container que comporta os projetos  */
+        padding: 10px 15%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    section.section_projetos .container_projetos .card_projeto{   /* configuração dos card's que comporta os projetos  */
+        width: 16rem;
+        min-width: 15rem;
+        height: 10rem;
+        background-color: #000000;
+        position: relative;
+        border: .1rem solid #575757a4;
+        border-radius: .3rem;  
+        position: relative;
+    }
+
+    section.section_projetos .container_projetos .card_projeto .imagem_fundo{   /* configuração das imagens dos projetos que vão dentro do card's  */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    section.section_projetos .container_projetos .card_projeto:hover .imagem_fundo{  /* configuração do hover quando passa o mouse por cima do card do projeto  */
+        opacity: .1;  
+        transition: 0.2s ease;   
+        cursor: pointer;
+    }
+
+    section.section_projetos .container_projetos .card_projeto .card_descricao{     
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        opacity: 0;   
+    }
+
+    section.section_projetos .container_projetos .card_projeto:hover .card_descricao{  /* aparecer o conteudo do card com efeito hover */
+        opacity: 1;
+        transition: 0.5s ease; 
+        transform: scale(1.05);  
+    }
+
+    section.section_projetos .container_projetos .card_projeto .card_descricao .titulo_card{  /* configuração do titulo do card */
+        color: #ffffff;
+        font-size: 1.4rem;
+    }
+
+    section.section_projetos .container_projetos .card_projeto .card_descricao .card_nav{   /* configuração do nav button dentro do card */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        z-index: 2;
+        
+    }
+
+    section.section_projetos .container_projetos .card_projeto .card_descricao .card_nav .button{   /* configuração dos buttons github e site do card */
+        width: 5rem;
+        height: 3rem;
+        border-radius: .5rem;
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid #000000;
+        font-size: 1.0rem;
+        
+    }
+
+    section.section_projetos .container_projetos .card_projeto .card_descricao .card_nav .github{   /* cor do botão github do projeto */
+        background-color: rgb(204, 0, 255);
+    }
+
+    section.section_projetos .container_projetos .card_projeto .card_descricao .card_nav .site{     /* cor do botão site do projeto */
+        background-color: #00ffee;
+    }
+
+
+    /* BOTÃO GITHUB */
+
+    section.section_projetos .container_button{     /* configuração do container que comporta o button ABRIR GITHUB */
+        padding: 10px 4%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+    
+    section.section_projetos .container_button .botao_github{   /* configuração do botão ABRIR GITHUB */
+        width: 15rem;
+        height: 3rem;
+        border-radius: .5rem;
+        background-color: transparent;
+        border: .1rem solid #00ffee;
+        color: #00ffee;
+        cursor: pointer;
+        transition: 0.4s; 
+        font-size: 1.0rem;
+    }
+    
+    section.section_projetos .container_button .botao_github:hover{       /* configuração do mouse hover */
+        background-color: #00ffee; 
+        color: #000000;
+    }
+
+    
+    /*---ESTILO CONTATO---*/
+
+    section.formulario{                                /* configuração de padding e cor de fundo da section  */
+        padding: 100px 4%;
+    }
+
+    section.formulario h2{                             /* cor do H2 */
+        color: #ffffff;
+        font-size: 35px;
+    }
+
+    section.formulario h3{
+        padding: 20px 20%;                              /* cor do span */
+        color: #e0e0e0;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    section.formulario h3 span{  
+        padding: 10px 10%;                             /* cor do span */
+        font-size: 1.1rem;
+        flex-direction: column;
+    }
+
+    section.formulario h2, h2 span, h3 span{           /* configuração do h2 e do span "." dentro da section  */
+        display: flex;
+        justify-content: center;
+        padding: 20px 0%;
+        gap: 5px;
+        align-items: center;
+    }
+
+    section.formulario h1{                             /* configuração do h1 do formulário */
+        justify-content: center;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 70px 5%;
+        display: flex;
+        cursor: pointer;
+    }
+
+    form{
+        max-width: 350px;                              /* configuração do formulário */
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    form .btn-enviar{   
+        padding: 1px 0%;                              /* distância do botão ENVIAR até a seção footer */  
+    }
+
+    form .btn-enviar input{                            /* configuração do botão enviar */
+        width: 350px;
+        background-color: #00ffee;
+        color: #000000;
+        cursor: pointer;
+        transition: 0.4s;  
+    }
+
+    form .btn-enviar input:hover{                      /* mouse hover no botão enviar */
+        background-color: #00d1c3;
+        transform: scale(1.01); 
+    }
+
+    }
