@@ -396,7 +396,7 @@ section.section_habilidades ul{
 
     section.head-do-site .img-head-site img{                            
         width: 100%;
-        padding: 60px 4%;                    
+        padding: 60px 8%;                    
     }
 
     section.head-do-site .txt-head-site h4{               
@@ -418,21 +418,21 @@ section.section_habilidades ul{
     
     section.head-do-site .txt-head-site h1 span{        
         font-size: 45px;     
-        padding: 10px 17%;
+        padding: 1px 17%;
         text-align: center;              
     }
     
     section.head-do-site .txt-head-site p{  
         font-size: 14px;                               
         padding: 10px 5%;
-        margin-top: 10px;
+        margin-top: 5px;
         text-align: center;
     }
 
     /* BTN MÍDIAS */
     
     section.head-do-site .btn-midias{
-        padding: 1px 25%;
+        padding: 1px 17%;
         text-align: left;
         align-items: flex-end;
         justify-content: center;
@@ -454,7 +454,6 @@ section.section_habilidades ul{
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        background: rgb(28, 28, 28);
         border-radius: 15px;
         position: relative;
         transition: 0.4s;
@@ -464,7 +463,7 @@ section.section_habilidades ul{
     section.head-do-site .link-contato:hover{
         cursor: pointer;
         transform: scale(1.15);
-        color: #00ffff;
+        color: #007bff;
     }
     
     section.head-do-site .link-contato i{
@@ -485,7 +484,7 @@ section.section_habilidades ul{
     }
 
     section.section_sobre .txt_section_sobre h1{  
-        font-size: 40px;                   
+        font-size: 35px;                   
         padding: 10px 10%; 
         text-align: center;
      }
@@ -504,8 +503,7 @@ section.section_habilidades ul{
   
      section.section_projetos{                                /* configuração de padding, cor de fundo da section e efeito de luz da section */
         padding: 50px 13%;
-        background-color: #0f0f0f;
-        box-shadow: 0 0 100px 20px #e0e0e06b;
+        background-color: #000000;
     }
     
     section.section_projetos .titulo_projeto{               /* configuração do texto MEUS PROJETOS  */
@@ -515,7 +513,7 @@ section.section_habilidades ul{
     }
     
     section.section_projetos .container_projetos{           /* configuração do rascunho do container que comporta os projetos  */
-        padding: 10px 15%;
+        padding: 10px 2%;
         width: 100%;
         height: 100%;
         display: flex;
@@ -525,8 +523,8 @@ section.section_habilidades ul{
     }
 
     section.section_projetos .container_projetos .card_projeto{   /* configuração dos card's que comporta os projetos  */
-        width: 16rem;
-        min-width: 15rem;
+        width: 14rem;
+        min-width: 13rem;
         height: 10rem;
         background-color: #000000;
         position: relative;
@@ -595,34 +593,6 @@ section.section_habilidades ul{
 
     section.section_projetos .container_projetos .card_projeto .card_descricao .card_nav .site{     /* cor do botão site do projeto */
         background-color: #00ffee;
-    }
-
-
-    /* BOTÃO GITHUB */
-
-    section.section_projetos .container_button{     /* configuração do container que comporta o button ABRIR GITHUB */
-        padding: 10px 4%;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        margin: 3rem 0;
-    }
-    
-    section.section_projetos .container_button .botao_github{   /* configuração do botão ABRIR GITHUB */
-        width: 15rem;
-        height: 3rem;
-        border-radius: .5rem;
-        background-color: transparent;
-        border: .1rem solid #00ffee;
-        color: #00ffee;
-        cursor: pointer;
-        transition: 0.4s; 
-        font-size: 1.0rem;
-    }
-    
-    section.section_projetos .container_button .botao_github:hover{       /* configuração do mouse hover */
-        background-color: #00ffee; 
-        color: #000000;
     }
 
     
